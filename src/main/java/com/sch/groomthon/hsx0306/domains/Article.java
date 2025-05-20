@@ -1,4 +1,4 @@
-package com.sch.groomthon.hsx0306.caphterdeveloper;
+package com.sch.groomthon.hsx0306.domains;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
