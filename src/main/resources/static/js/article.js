@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // 삭제 기능
 const deleteButton = document.getElementById('delete-btn');
 
@@ -25,6 +26,15 @@ if (modifyButton) {
 
         fetch(`/api/articles/${id}`, {
             method: 'PUT',
+=======
+// 생성 기능
+const createButton = document.getElementById('create-btn');
+
+if (createButton) {
+    createButton.addEventListener('click', event => {
+        fetch('/api/articles', {
+            method: 'POST',
+>>>>>>> fetureCreate
             headers: {
                 "Content-Type": "application/json",
             },
@@ -34,9 +44,17 @@ if (modifyButton) {
             })
         })
             .then(() => {
+<<<<<<< HEAD
                 alert('수정이 완료되었습니다.');
                 location.replace(`/articles/${id}`);
             });
     });
 }
 >>>>>>> fetureEdit
+=======
+                alert('등록 완료되었습니다.');
+                location.replace('/articles');
+            });
+    });
+}
+>>>>>>> fetureCreate
